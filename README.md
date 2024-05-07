@@ -3,11 +3,10 @@
 ##AULA VETOR E MATRIZ | WESLEY SALES
 
 
+CADASTRO DE 3 ALUNOS
+Sem vetores e matrizes
  
-	CADASTRO DE 3 ALUNOS
-	Sem vetores e matrizes
- ##
-##
+
 	char aluno1[50], aluno2[50], aluno3[50];
 	
 	printf("Digite o nome do primeiro aluno: ");
