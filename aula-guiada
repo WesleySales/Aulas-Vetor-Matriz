@@ -8,11 +8,8 @@ int main(){
 	setlocale(LC_ALL,"Portuguese");
 	
 	//CADASTRO DE 3 ALUNOS
-	//_______________________________________________________________________
-	
-##
+
 	//Sem vetores e matrizes
-##
 	char aluno1[50], aluno2[50], aluno3[50];
 	
 	printf("Digite o nome do primeiro aluno: ");
