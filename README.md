@@ -2,7 +2,7 @@
 
 # AULA VETOR E MATRIZ | WESLEY SALES
 
-O que são e para que servem: 
+## O que são e para que servem: 
 
 Vetores e Matrizes são estruturas de dados assim como listas, pilhas, árvores (conceitos que veremos pra frete). Usamos este tipo de estrutura para facilitar o gerenciamento de dados, podemos atribuir, manipular e visualizar de forma mais prática, além de otimizar o código.
 
@@ -24,13 +24,14 @@ Exemplo 1: Cadastro de 3 alunos - SEM vetores e matrizes
 	printf("%s\n", aluno3);
 
 O problema foi resolvido, porém com muito trabalho desnecessário. Imagine ter que cadastrar 50 alunos ou até mais, o código teria muito mais linhas do que o necessário. Isso é o ponto negativo tanto na criação quanto manutenção do código. 
+
+Quanto mais você digita, mais chances de cometer um erro.
 Imagine que exista uma alteração necessária e você precise realizar em todas as linhas que a variável aluno apareça...
+##
+## Por isso Deus criou as Estruturas de Dados!
 
-# Por isso Deus criou as Estruturas de Dados!
+Veja a resolução daquele problema usando um vetor básico: 
 
- Veja aquele problema
- 
-	//AGORA USANDO VETOR
 	char alunos[3][50];//declarando o vetor alunos que vai armazenar os dados.
 	
 	//Preenchendo o vetor com uso da estrutura de repetiçao FOR(para).
@@ -42,6 +43,10 @@ Imagine que exista uma alteração necessária e você precise realizar em todas
 	for(int i=0;i<3;i++){
 		printf("Aluno %d: %s\n",i+1,alunos[i]);}
 
+O mesmo problema que antes eu precisei de 10 linhas agora foi resolvido em 6 e o melhor é que se fossem 50 alunos continuariam sendo as mesmas 6 linhas. 
+
+###Estrutura de Dados + Estrutura de Repetição: Vetor para armazenar os dados e FOR para manipular.
+##
 
 
 //A matriz, ou vetor bidimensional, armazena dois dados de mesmo tipo.*/
