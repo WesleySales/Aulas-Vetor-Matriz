@@ -99,3 +99,57 @@ O que eu fiz agora foi realizar uma operação com base nos dados oferecidos. Fi
 - Indicar se ele foi aprovado, reprovado ou se deve fazer uma recuperação (aprovado: >=6; reprovado: <5; recuperação: >=5 && < 6.
 
 ### fique a vontade para trabalhar como preferir.
+##
+
+	#include <stdio.h>
+	#include <string.h>
+	#include <locale.h>
+	
+	int main(){
+	setlocale(LC_ALL,"Portuguese");
+	int notas_unidade[3][3]; 		
+	double media[3];
+	char nome[50],turma[50];
+	
+	printf("Nome: ");
+	scanf("%s", nome);
+	printf("Turma: ");
+	scanf("%s", turma);
+
+	for(int linha=0;linha<3;linha++){
+	double soma=0;
+	
+	printf("\nPreenchendo a unidade %d:\n",linha+1);
+
+		for(int coluna=0;coluna<3;coluna++){	
+			printf("Digite a %d° nota: ",coluna+1);
+			scanf("%d",&notas_unidade[linha][coluna]);
+			soma+=notas_unidade[linha][coluna];
+	}
+		media[linha]=soma/3;
+	}
+	
+	printf("\nBOLETIM ESCOLAR:\n");
+	printf("_______________\n: ");
+	printf("Nome: %s ", nome);
+	printf("Turma: %s \n", turma);
+	printf("_______________\n: ");
+	
+
+	for(int i=0;i<3;i++){
+		if(media[i]>=6){
+			printf("\nA média do aluno na %d unidade foi: %.2f. ----> APROVADO", i+1,media[i]);
+		}
+		else if(media[i]>=5 && media[i]<6){
+			printf("\nA média do aluno na %d unidade foi: %.2f. ----> RECUPERAÇÃO", i+1,media[i]);
+		}
+		else {
+			printf("\nA média do aluno na %d unidade foi: %.2f. ----> REPROVADO", i+1,media[i]);
+		}
+	
+	}
+	
+
+	}
+	
+	
