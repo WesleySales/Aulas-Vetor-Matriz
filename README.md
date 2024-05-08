@@ -68,3 +68,34 @@ Neste exemplo vamos usar 3 unidades e 3 notas por unidade, sendo assim, é uma M
 	}
 
 Nesse caso usamos dois FOR, um para indicar que estamos preenchendo a primeira linha (ou Vetor) e o segundo for para indicar a coluna que estamos trabalhando.
+
+### Trabalhando melhor a questão anterior: 
+
+			
+	int notas_unidade[3][3]; //declarei minha matriz que vai armazenar as 3 notas por unidade
+	double media[3];
+
+	for(int linha=0;linha<3;linha++){
+		double soma=0;
+		printf("\nPreenchendo a unidade %d:\n",linha+1);
+  
+  		for(int coluna=0;coluna<3;coluna++){
+				
+			printf("Digite a %d° nota: ",coluna+1);
+			scanf("%d",&notas_unidade[linha][coluna]);
+			soma+=notas_unidade[linha][coluna];
+		}
+			media[linha]=soma/3;
+	}
+	
+	for(int i=0;i<3;i++){
+		printf("\nA média do aluno na %d unidade foi: %.2f", i+1,media[i]);
+	}
+
+	}
+
+O que eu fiz agora foi realizar uma operação com base nos dados oferecidos. Fiz a média do aluno em cada uma das unidades e mostrei. Ainda podemos trabalhar muito em cima deste modelo, proponho esses desafios:
+- Solicitar nome e turma do aluno no inicio do programa e apresentar junto a média no final.
+- Indicar se ele foi aprovado, reprovado ou se deve fazer uma recuperação (aprovado: >=6; reprovado: <5; recuperação: >=5 && < 6.
+
+### fique a vontade para trabalhar como preferir.
