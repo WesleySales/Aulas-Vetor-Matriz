@@ -45,25 +45,17 @@ Veja a resolução daquele problema usando um vetor básico:
 
 O mesmo problema que antes eu precisei de 10 linhas agora foi resolvido em 6 e o melhor é que se fossem 50 alunos continuariam sendo as mesmas 6 linhas. 
 
-###Estrutura de Dados + Estrutura de Repetição: Vetor para armazenar os dados e FOR para manipular.
+### Estrutura de Dados + Estrutura de Repetição: Vetor para armazenar os dados e FOR para manipular.
 ##
 
+## MATRIZ OU VETOR BIDIMENSIONAL
 
-//A matriz, ou vetor bidimensional, armazena dois dados de mesmo tipo.*/
+Como o nome sugere, matriz é apenas a relação de dois vetores na qual usamos linhas e colunas para armazenar dados.
 
-/*Exemplo, podemos usar uma matriz para armazenar as notas por unidade:
-vou montar uma matriz com 3 unidades e cada unidade terá 3 notas, ou seja, matriz 3x3*/
+Podemos usar como exemplo de aplicação da matriz um Boletim de Notas. 
+Neste exemplo vamos usar 3 unidades e 3 notas por unidade, sendo assim, é uma Matriz[3][3]
 
-
-
-int notas_unidade[3][3]; //declarei minha matriz que vai armazenar as 3 notas por unidade
-
-/*usarei novamente a estrutura FOR para preencher a matriz
-uma coisa um pouco diferente é que nessa situação vamos usar 
-2 FOR, um dentro do outro.*/
-
-for(int linha=0;linha<3;linha++){
-	//printf("\nPreenchendo a unidade %d:\n",);
+	int notas_unidade[3][3]; //declarei minha matriz que vai armazenar as 3 notas por unidade
 	
 	for(int linha=0;linha<3;linha++){
 	printf("\nPreenchendo a unidade %d:\n",linha+1);
@@ -72,7 +64,7 @@ for(int linha=0;linha<3;linha++){
 		printf("\nDigite a %d° nota: ",coluna+1);
 		scanf("%d",&notas_unidade[linha][coluna]);
 	}
-}
+	}
+	}
 
-}
-
+Nesse caso usamos dois FOR, um para indicar que estamos preenchendo a primeira linha (ou Vetor) e o segundo for para indicar a coluna que estamos trabalhando.
