@@ -4,9 +4,9 @@
 
 ## O que são e para que servem: 
 
-Vetores e Matrizes são estruturas de dados assim como listas, pilhas, árvores (conceitos que veremos pra frente). Usamos este tipo de estrutura para facilitar o gerenciamento de dados. Podemos atribuir, manipular e visualizar de forma mais prática, além de otimizar o código. 
+Vetores e Matrizes são estruturas usadas para facilitar o gerenciamento de dados (assim como listas, pilhas, árvores...). Podemos atribuir, visualizar e manipular de forma mais prática, além de otimizar o código. 
 
-Só podemos usar um vetor ou matriz para guardar dados de um mesmo tipo, ou seja, nao podemos guardar nomes e idades dentro de um vetor ou matriz. Isso é uma limitação, mas eles são úteis para resolver problemas mais simples.
+Só podemos usar um vetor ou matriz para guardar dados de um mesmo tipo, ou seja, nao é possível guardar nomes e idades dentro de um vetor ou matriz, visto que essas informações requerem variáveis do String e int respectivamente. Isso é uma limitação dessas estruturas, porém elas são bem úteis em diversos casos.
 
 Exemplo 1: Cadastro de 3 alunos - SEM vetores e matrizes
 
